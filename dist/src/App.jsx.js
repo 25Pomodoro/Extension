@@ -1,4 +1,4 @@
-import { createHotContext as __vite__createHotContext } from "/vendor/vite-client.js";import.meta.hot = __vite__createHotContext("/src/App.jsx.js");import __vite__cjsImport0_react_jsxDevRuntime from "/vendor/.vite-deps-react_jsx-dev-runtime.js__v--4fe29115.js"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { createHotContext as __vite__createHotContext } from "/vendor/vite-client.js";import.meta.hot = __vite__createHotContext("/src/App.jsx.js");import __vite__cjsImport0_react_jsxDevRuntime from "/vendor/.vite-deps-react_jsx-dev-runtime.js__v--2f42d6cd.js"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
 import RefreshRuntime from "/vendor/react-refresh.js";
 const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
 let prevRefreshReg;
@@ -10,14 +10,14 @@ if (import.meta.hot && !inWebWorker) {
   prevRefreshReg = window.$RefreshReg$;
   prevRefreshSig = window.$RefreshSig$;
   window.$RefreshReg$ = (type, id) => {
-    RefreshRuntime.register(type, "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx " + id);
+    RefreshRuntime.register(type, "/Users/omda/Desktop/Programming/Extension/src/App.jsx " + id);
   };
   window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
 }
 var _s = $RefreshSig$();
 import "/src/App.css.js";
 import logo from "/src/assets/logo.png__import.js";
-import __vite__cjsImport5_react from "/vendor/.vite-deps-react.js__v--4fe29115.js"; const useState = __vite__cjsImport5_react["useState"]; const useEffect = __vite__cjsImport5_react["useEffect"];
+import __vite__cjsImport5_react from "/vendor/.vite-deps-react.js__v--2f42d6cd.js"; const useState = __vite__cjsImport5_react["useState"]; const useEffect = __vite__cjsImport5_react["useEffect"];
 function App() {
   _s();
   const [time, setTimer] = useState("25:00");
@@ -61,6 +61,7 @@ function App() {
   };
   const resetTimer = () => {
     clearInterval();
+    document.querySelector(".mainButton").innerHTML = "Start session";
     setIsRunning(false);
     setTimer("25:00");
     setSessionOn(false);
@@ -91,8 +92,8 @@ function App() {
           void 0,
           false,
           {
-            fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-            lineNumber: 75,
+            fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+            lineNumber: 77,
             columnNumber: 17
           },
           this
@@ -101,8 +102,8 @@ function App() {
       void 0,
       false,
       {
-        fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-        lineNumber: 71,
+        fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+        lineNumber: 73,
         columnNumber: 13
       },
       this
@@ -110,80 +111,80 @@ function App() {
     /* @__PURE__ */ jsxDEV("div", { children: /* @__PURE__ */ jsxDEV("img", { src: logo, className: "logo", alt: "Pomodoro logo", onClick: () => {
       window.open("http://stackoverflow.com", "_blank");
     } }, void 0, false, {
-      fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-      lineNumber: 81,
+      fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+      lineNumber: 83,
       columnNumber: 17
     }, this) }, void 0, false, {
-      fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-      lineNumber: 80,
+      fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+      lineNumber: 82,
       columnNumber: 13
     }, this),
     /* @__PURE__ */ jsxDEV("h1", { children: "25Pomodoro" }, void 0, false, {
-      fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-      lineNumber: 85,
-      columnNumber: 13
-    }, this),
-    /* @__PURE__ */ jsxDEV("div", { className: "timer", children: /* @__PURE__ */ jsxDEV("span", { children: time }, void 0, false, {
-      fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-      lineNumber: 88,
-      columnNumber: 17
-    }, this) }, void 0, false, {
-      fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
+      fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
       lineNumber: 87,
       columnNumber: 13
     }, this),
-    /* @__PURE__ */ jsxDEV("div", { className: "card", children: /* @__PURE__ */ jsxDEV("button", { onClick: startTimer, className: "mainButton", children: "Start session" }, void 0, false, {
-      fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-      lineNumber: 92,
+    /* @__PURE__ */ jsxDEV("div", { className: "timer", children: /* @__PURE__ */ jsxDEV("span", { children: time }, void 0, false, {
+      fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+      lineNumber: 90,
       columnNumber: 17
     }, this) }, void 0, false, {
-      fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-      lineNumber: 91,
+      fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+      lineNumber: 89,
+      columnNumber: 13
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "card", children: /* @__PURE__ */ jsxDEV("button", { onClick: startTimer, className: "mainButton", children: "Start session" }, void 0, false, {
+      fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+      lineNumber: 94,
+      columnNumber: 17
+    }, this) }, void 0, false, {
+      fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+      lineNumber: 93,
       columnNumber: 13
     }, this),
     /* @__PURE__ */ jsxDEV("p", { className: "note", children: "Stay tuned for our updates" }, void 0, false, {
-      fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-      lineNumber: 94,
+      fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+      lineNumber: 98,
       columnNumber: 13
     }, this),
     /* @__PURE__ */ jsxDEV("div", { className: "overlay", children: [
       /* @__PURE__ */ jsxDEV("p", { children: [
         "Are you sure you ",
         /* @__PURE__ */ jsxDEV("br", {}, void 0, false, {
-          fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-          lineNumber: 97,
+          fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+          lineNumber: 101,
           columnNumber: 37
         }, this),
         " want to reset the timer?"
       ] }, void 0, true, {
-        fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-        lineNumber: 97,
+        fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+        lineNumber: 101,
         columnNumber: 17
       }, this),
       /* @__PURE__ */ jsxDEV("section", { className: "buttonsOverlay", children: [
         /* @__PURE__ */ jsxDEV("button", { onClick: resetTimer, children: "Yes" }, void 0, false, {
-          fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-          lineNumber: 99,
+          fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+          lineNumber: 103,
           columnNumber: 21
         }, this),
         /* @__PURE__ */ jsxDEV("button", { onClick: takeOverlayOff, children: "No" }, void 0, false, {
-          fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-          lineNumber: 100,
+          fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+          lineNumber: 104,
           columnNumber: 21
         }, this)
       ] }, void 0, true, {
-        fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-        lineNumber: 98,
+        fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+        lineNumber: 102,
         columnNumber: 17
       }, this)
     ] }, void 0, true, {
-      fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-      lineNumber: 96,
+      fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+      lineNumber: 100,
       columnNumber: 13
     }, this)
   ] }, void 0, true, {
-    fileName: "/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx",
-    lineNumber: 70,
+    fileName: "/Users/omda/Desktop/Programming/Extension/src/App.jsx",
+    lineNumber: 72,
     columnNumber: 5
   }, this);
 }
@@ -196,7 +197,7 @@ if (import.meta.hot && !inWebWorker) {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
   RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
-    RefreshRuntime.registerExportsForReactRefresh("/Users/omda/Desktop/Programming/Pomodoro-timer/src/App.jsx", currentExports);
+    RefreshRuntime.registerExportsForReactRefresh("/Users/omda/Desktop/Programming/Extension/src/App.jsx", currentExports);
     import.meta.hot.accept((nextExports) => {
       if (!nextExports)
         return;

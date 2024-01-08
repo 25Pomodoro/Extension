@@ -2,6 +2,7 @@ import './App.css';
 import logo from './assets/logo.png'; // Replace with the actual path to your logo
 import { useState, useEffect } from 'react';
 
+
 function App() {
     const [time, setTimer] = useState("25:00");
     const [isRunning, setIsRunning] = useState(false);
@@ -52,6 +53,7 @@ function App() {
 
     const resetTimer = () => {
         clearInterval();
+        document.querySelector(".mainButton").innerHTML = "Start session";
         setIsRunning(false);
         setTimer("25:00");
         setSessionOn(false);
@@ -91,6 +93,8 @@ function App() {
             <div className="card">
                 <button onClick={startTimer} className={"mainButton"}>Start session</button>
             </div>
+
+
             <p className="note">Stay tuned for our updates</p>
 
             <div className={"overlay"}>
