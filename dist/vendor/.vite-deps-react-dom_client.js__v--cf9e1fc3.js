@@ -1,7 +1,7 @@
 import {
   __commonJS,
   require_react
-} from "./chunk-4YP5LC2O.js";
+} from "/vendor/.vite-deps-chunk-4YP5LC2O.js__v--f9cbb38d.js";
 
 // node_modules/scheduler/cjs/scheduler.development.js
 var require_scheduler_development = __commonJS({

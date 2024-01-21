@@ -24,10 +24,10 @@
 }
 
 .logo {
-  height: 8em;
-  padding: 1.2em;
-  will-change: filter;
-  transition:  300ms;
+    height: 8em;
+    padding: 1.2em;
+    will-change: filter;
+    transition:  300ms;
 }
 
 .logo:hover {
@@ -62,7 +62,7 @@
 
 
 .note {
-  color: #888;
+    color: #888;
 }
 
 .timer span {
@@ -98,6 +98,20 @@
     color: white;
     margin-top: 40%;
 }
+
+.overlay-message {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin-top: 40%;
+
+    user-select: none;
+    moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    
+}
+
 .buttonsOverlay{
     display: flex;
     flex-direction: column;
@@ -106,8 +120,9 @@
 }
 
 .buttonsOverlay button{
-    width: 50px;
-    margin: 3px;
+    width: 70px;
+    height: 30px;
+    margin: 5px;
     padding: 5px;
     border: none;
     border-radius: 5px;
@@ -116,6 +131,7 @@
 
 }
 .buttonsOverlay button:hover{
+    scale: 1.1;
     background-color: #f5f5f5;
     cursor: pointer;
 }

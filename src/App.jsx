@@ -1,5 +1,6 @@
 import './App.css';
 import logo from './assets/logo.png'; // Replace with the actual path to your logo
+import clickSound from './assets/sessionStarted.mp3'; // Replace with the actual path to your sound
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     const [isRunning, setIsRunning] = useState(false);
     const [sessionOn, setSessionOn] = useState(false);
 
-    let clickSound = new Audio(chrome.runtime.getURL(".assets/buttonclick.mp3"));
+    var soundEffect = new Audio(chrome.runtime.getURL(clickSound));
 
     useEffect(() => {
         let timer;
@@ -37,7 +38,9 @@ function App() {
 
 
     const startTimer = () => {
-        void clickSound.play();
+        if (!sessionOn){
+            soundEffect.play();
+        }
         setSessionOn(true);
         if (!isRunning) {
             document.querySelector(".mainButton").innerHTML = "Pause session";
@@ -55,6 +58,7 @@ function App() {
         setIsRunning(false);
         setTimer("25:00");
         setSessionOn(false);
+        document.querySelector(".mainButton").innerHTML = "Start session";
         takeOverlayOff();
     };
 
@@ -94,7 +98,7 @@ function App() {
             <p className="note">Stay tuned for our updates</p>
 
             <div className={"overlay"}>
-                <p>Are you sure you <br/> want to reset the timer?</p>
+                <p className={'overlay-message'}>Are you sure you <br/> want to reset your session?</p>
                 <section className={"buttonsOverlay"}>
                     <button onClick={resetTimer}>Yes</button>
                     <button onClick={takeOverlayOff}>No</button>
