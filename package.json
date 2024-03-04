@@ -1,5 +1,5 @@
 {
-  "name": "pomodoro-timer",
+  "name": "25pomodoro",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,31 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mui/material": "^5.15.2",
-    "@mui/styled-engine-sc": "^6.0.0-alpha.10",
-    "@vitejs/plugin-react": "^4.2.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^6.1.6"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "^2.0.0-beta.21",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
-    "@vitejs/plugin-react-swc": "^3.5.0",
+    "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.55.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "vite": "^5.0.8"
-  },
-  "globals": {
-    "chrome": true
-  },
-  "env": {
-    "browser": true,
-    "chrome": true,
-    "es6": true,
-    "webextensions": true
   }
 }

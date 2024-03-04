@@ -1,7 +1,6 @@
 import './App.css';
-import logo from './assets/logo.png'; // Replace with the actual path to your logo
+import logo from './assets/logo.png';
 import { useState, useEffect } from 'react';
-
 
 function App() {
     const [time, setTimer] = useState("25:00");
@@ -93,12 +92,11 @@ function App() {
             <div className="card">
                 <button onClick={startTimer} className={"mainButton"}>Start session</button>
             </div>
-
-
+            
             <p className="note">Stay tuned for our updates</p>
 
             <div className={"overlay"}>
-                <p>Are you sure you <br/> want to reset the timer?</p>
+                <p>Are you sure you <br/> want to end your session?</p>
                 <section className={"buttonsOverlay"}>
                     <button onClick={resetTimer}>Yes</button>
                     <button onClick={takeOverlayOff}>No</button>
