@@ -1,7 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
     background: none;
-    width: 250px;
-    height: 400px;
+    width: 325px;
+    height: 550px;
     text-align: center;
-    outline: none;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
