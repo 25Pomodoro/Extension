@@ -1,4 +1,4 @@
-import { createHotContext as __vite__createHotContext } from "/vendor/vite-client.js";import.meta.hot = __vite__createHotContext("/src/Components/Timer.jsx.js");import __vite__cjsImport0_react_jsxDevRuntime from "/vendor/.vite-deps-react_jsx-dev-runtime.js__v--3797271c.js"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { createHotContext as __vite__createHotContext } from "/vendor/vite-client.js";import.meta.hot = __vite__createHotContext("/src/Components/Timer.jsx.js");import __vite__cjsImport0_react_jsxDevRuntime from "/vendor/.vite-deps-react_jsx-dev-runtime.js__v--d472034d.js"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
 import RefreshRuntime from "/vendor/react-refresh.js";
 const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
 let prevRefreshReg;
@@ -14,92 +14,41 @@ if (import.meta.hot && !inWebWorker) {
   };
   window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
 }
-var _s = $RefreshSig$();
-import __vite__cjsImport3_react from "/vendor/.vite-deps-react.js__v--3797271c.js"; const useEffect = __vite__cjsImport3_react["useEffect"]; const useState = __vite__cjsImport3_react["useState"];
-import clickSound from "/src/assets/sounds/sessionStarted.mp3__import.js";
+import __vite__cjsImport3_react from "/vendor/.vite-deps-react.js__v--d472034d.js"; const useEffect = __vite__cjsImport3_react["useEffect"]; const useState = __vite__cjsImport3_react["useState"];
+import { startTimer, resetTimer, sessionOn, time } from "/src/background.jsx.js";
 function Timer() {
-  _s();
-  const [time, setTimer] = useState("25:00");
-  const [isRunning, setIsRunning] = useState(false);
-  const [sessionOn, setSessionOn] = useState(false);
-  let soundEffect = new Audio(chrome.runtime.getURL(clickSound));
-  useEffect(() => {
-    let timer;
-    if (isRunning) {
-      const [minutes, seconds] = time.split(":").map(Number);
-      timer = setInterval(() => {
-        if (minutes === 0 && seconds === 0) {
-          clearInterval(timer);
-          setIsRunning(false);
-        } else {
-          const newSeconds = seconds === 0 ? 59 : seconds - 1;
-          const newMinutes = seconds === 0 ? minutes - 1 : minutes;
-          const newTime = `${newMinutes}:${newSeconds}`;
-          setTimer(newTime);
-        }
-      }, 1e3);
-    }
-    if (sessionOn) {
-      document.querySelector(".resetButton").style.display = "block";
-    } else {
-      document.querySelector(".resetButton").style.display = "none";
-    }
-    return () => clearInterval(timer);
-  }, [isRunning, time, sessionOn]);
-  const startTimer = () => {
-    if (!sessionOn) {
-      soundEffect.play();
-    }
-    setSessionOn(true);
-    if (!isRunning) {
-      document.querySelector(".mainButton").innerHTML = "Pause session";
-      setIsRunning(true);
-    } else {
-      document.querySelector(".mainButton").innerHTML = "Continue session";
-      clearInterval();
-      setIsRunning(false);
-    }
-  };
-  const resetTimer = () => {
-    clearInterval();
-    setIsRunning(false);
-    setTimer("25:00");
-    setSessionOn(false);
-    document.querySelector(".mainButton").innerHTML = "Start session";
-  };
-  return /* @__PURE__ */ jsxDEV("div", { className: "flex flex-col justify-center", children: [
-    /* @__PURE__ */ jsxDEV("div", { className: "hover:scale-105", children: /* @__PURE__ */ jsxDEV("h1", { className: "font-bold text-2xl", children: time }, void 0, false, {
+  return /* @__PURE__ */ jsxDEV("div", { className: "flex flex-col justify-center mt-8 gap-3", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "", children: /* @__PURE__ */ jsxDEV("h1", { className: "font-bold text-4xl select-none cursor-default", children: time }, void 0, false, {
       fileName: "/Users/omda/Desktop/Programming/Projects/Extension/src/Components/Timer.jsx",
-      lineNumber: 66,
+      lineNumber: 10,
       columnNumber: 17
     }, this) }, void 0, false, {
       fileName: "/Users/omda/Desktop/Programming/Projects/Extension/src/Components/Timer.jsx",
-      lineNumber: 65,
+      lineNumber: 9,
       columnNumber: 13
     }, this),
-    /* @__PURE__ */ jsxDEV("div", { children: [
-      /* @__PURE__ */ jsxDEV("button", { className: "border-2 border-gray-500  bg-gray-50 rounded-md", onClick: startTimer, children: "Start session" }, void 0, false, {
+    /* @__PURE__ */ jsxDEV("div", { className: "flex flex-col justify-center items-center gap-3", children: [
+      /* @__PURE__ */ jsxDEV("button", { className: "p-4 bg-gray-100 rounded-md w-5/12 drop-shadow-xl shadow-teal-400", id: "button-1", onClick: startTimer, children: "Start session" }, void 0, false, {
         fileName: "/Users/omda/Desktop/Programming/Projects/Extension/src/Components/Timer.jsx",
-        lineNumber: 69,
+        lineNumber: 13,
         columnNumber: 17
       }, this),
-      /* @__PURE__ */ jsxDEV("button", { className: "resetButton rounded-md", onClick: resetTimer, children: "Reset session" }, void 0, false, {
+      /* @__PURE__ */ jsxDEV("button", { className: "p-4 bg-gray-100 rounded-md w-5/12 drop-shadow-xl shadow-teal-400", id: "button-2", onClick: resetTimer, hidden: !sessionOn, children: "Reset session" }, void 0, false, {
         fileName: "/Users/omda/Desktop/Programming/Projects/Extension/src/Components/Timer.jsx",
-        lineNumber: 70,
+        lineNumber: 14,
         columnNumber: 17
       }, this)
     ] }, void 0, true, {
       fileName: "/Users/omda/Desktop/Programming/Projects/Extension/src/Components/Timer.jsx",
-      lineNumber: 68,
+      lineNumber: 12,
       columnNumber: 13
     }, this)
   ] }, void 0, true, {
     fileName: "/Users/omda/Desktop/Programming/Projects/Extension/src/Components/Timer.jsx",
-    lineNumber: 64,
+    lineNumber: 8,
     columnNumber: 5
   }, this);
 }
-_s(Timer, "lCADB1/5e8s0tVRPpocPhvUUpzM=");
 _c = Timer;
 export default Timer;
 var _c;

@@ -2,11 +2,37 @@
   "manifest_version": 3,
   "name": "25Pomodoro",
   "version": "1.0.0",
-  "action": { "default_popup": "index.html" },
+  "action": {
+    "default_popup": "index.html"
+  },
   "content_scripts": [
     {
-      "js": ["src/content.jsx"],
-      "matches": ["https://www.google.com/*"]
+      "js": [
+        "src/App.jsx"
+      ],
+      "matches": [
+        "https://www.google.com/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "./src/background.jsx",
+    "type": "module"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": [
+        "**/*",
+        "*"
+      ],
+      "use_dynamic_url": true
     }
   ]
 }

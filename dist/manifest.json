@@ -8,18 +8,32 @@
   "content_scripts": [
     {
       "js": [
-        "src/content.jsx-loader.js"
+        "src/App.jsx-loader.js"
       ],
       "matches": [
         "https://www.google.com/*"
       ]
     }
   ],
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
   "background": {
-    "service_worker": "service-worker-loader.js",
+    "service_worker": "src/background.jsx.js",
     "type": "module"
   },
   "web_accessible_resources": [
+    {
+      "resources": [
+        "**/*",
+        "*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "use_dynamic_url": true
+    },
     {
       "matches": [
         "<all_urls>"

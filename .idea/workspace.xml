@@ -1,26 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6639972f-29f0-47cf-8c52-e579392476eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/src/App.js-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/App.jsx-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/Components/Data.jsx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/profile.svg__import.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/spotify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/spotify.svg__import.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/tasks.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/tasks.svg__import.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/theme.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/theme.svg__import.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/background.jsx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/src/content.jsx-loader.js-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/vendor/.vite-deps-chunk-4YP5LC2O.js__v--d472034d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/vendor/.vite-deps-react.js__v--d472034d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/vendor/.vite-deps-react_jsx-dev-runtime.js__v--d472034d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/background.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/service-worker-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/service-worker-loader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/src/App.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/App.css.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/src/App.jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/App.jsx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/content.jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/content.jsx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/index.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/index.css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/Components/Footer.jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/Components/Footer.jsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/Components/Header.jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/Components/Header.jsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/Components/Timer.jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/Components/Timer.jsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/buttonclick.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/assets/buttonclick.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/logos/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/assets/logos/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/sessionStarted.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/assets/sessionStarted.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/@coreui_react.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/@coreui_react.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-MCEUSTYS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-MCEUSTYS.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-S2TLTWWO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-S2TLTWWO.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Timer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Timer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,30 +49,71 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="merge" />
+                    <option name="lastUsedInstant" value="1709587000" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1709586999" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2bH3gNVEJo1u87RpwvfaxW3iVDE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "merge",
-    "last_opened_file_path": "/Users/omda/Desktop/25Pomodoro",
+    "last_opened_file_path": "/Users/omda/Desktop/Programming/Projects/Extension/src/assets/icons",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/icons" />
+      <recent name="$PROJECT_DIR$/src/assets/logos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/icons" />
+      <recent name="$PROJECT_DIR$/src/assets/logos" />
+      <recent name="$PROJECT_DIR$/src/assets/sounds" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,5 +128,8 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-import { createHotContext as __vite__createHotContext } from "/vendor/vite-client.js";import.meta.hot = __vite__createHotContext("/src/Components/Header.jsx.js");import __vite__cjsImport0_react_jsxDevRuntime from "/vendor/.vite-deps-react_jsx-dev-runtime.js__v--3797271c.js"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { createHotContext as __vite__createHotContext } from "/vendor/vite-client.js";import.meta.hot = __vite__createHotContext("/src/Components/Header.jsx.js");import __vite__cjsImport0_react_jsxDevRuntime from "/vendor/.vite-deps-react_jsx-dev-runtime.js__v--d472034d.js"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
 import RefreshRuntime from "/vendor/react-refresh.js";
 const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
 let prevRefreshReg;
@@ -16,28 +16,31 @@ if (import.meta.hot && !inWebWorker) {
 }
 import HeaderLogo from "/src/assets/logos/logo.svg__import.js";
 function Header() {
-  return /* @__PURE__ */ jsxDEV("div", { className: "flex flex-row justify-between items-center p-3", children: [
-    /* @__PURE__ */ jsxDEV("div", { children: /* @__PURE__ */ jsxDEV("img", { src: HeaderLogo, alt: "Pomodoro Timer", width: 75 }, void 0, false, {
+  const redirectToHome = () => {
+    chrome.tabs.create({ url: "https://25Pomodoro.com" });
+  };
+  return /* @__PURE__ */ jsxDEV("div", { className: "flex flex-row justify-between items-center p-3 mb-5", children: [
+    /* @__PURE__ */ jsxDEV("div", { children: /* @__PURE__ */ jsxDEV("img", { onClick: redirectToHome, className: "hover:cursor-pointer select-none", src: HeaderLogo, alt: "Pomodoro Timer", width: 75 }, void 0, false, {
       fileName: "/Users/omda/Desktop/Programming/Projects/Extension/src/Components/Header.jsx",
-      lineNumber: 9,
+      lineNumber: 14,
       columnNumber: 13
     }, this) }, void 0, false, {
       fileName: "/Users/omda/Desktop/Programming/Projects/Extension/src/Components/Header.jsx",
-      lineNumber: 8,
+      lineNumber: 13,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ jsxDEV("div", { children: /* @__PURE__ */ jsxDEV("p", { className: "text-2xl font-semibold", children: "25Pomodoro" }, void 0, false, {
+    /* @__PURE__ */ jsxDEV("div", { children: /* @__PURE__ */ jsxDEV("p", { onClick: redirectToHome, className: "text-2xl font-semibold hover:cursor-pointer select-none", children: "25Pomodoro" }, void 0, false, {
       fileName: "/Users/omda/Desktop/Programming/Projects/Extension/src/Components/Header.jsx",
-      lineNumber: 12,
+      lineNumber: 17,
       columnNumber: 13
     }, this) }, void 0, false, {
       fileName: "/Users/omda/Desktop/Programming/Projects/Extension/src/Components/Header.jsx",
-      lineNumber: 11,
+      lineNumber: 16,
       columnNumber: 9
     }, this)
   ] }, void 0, true, {
     fileName: "/Users/omda/Desktop/Programming/Projects/Extension/src/Components/Header.jsx",
-    lineNumber: 7,
+    lineNumber: 12,
     columnNumber: 5
   }, this);
 }
