@@ -1,1 +1,0 @@
-export default "/src/assets/sounds/sessionStarted.mp3"

@@ -1,1 +1,0 @@
-export default "/src/assets/icons/theme.svg"

@@ -1,43 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6639972f-29f0-47cf-8c52-e579392476eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/src/App.js-loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/App.jsx-loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/Components/Data.jsx.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/profile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/profile.svg__import.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/spotify.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/spotify.svg__import.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/tasks.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/tasks.svg__import.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/theme.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/assets/icons/theme.svg__import.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/background.jsx.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/src/content.jsx-loader.js-loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/vendor/.vite-deps-chunk-4YP5LC2O.js__v--d472034d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/vendor/.vite-deps-react.js__v--d472034d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/vendor/.vite-deps-react_jsx-dev-runtime.js__v--d472034d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/background.jsx" afterDir="false" />
+    <list default="true" id="1b5bae9f-ecf0-454c-ad11-1fd72494886e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/25Pomodoro.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/service-worker-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/service-worker-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/App.css.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/App.css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/App.jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/App.jsx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/Components/Footer.jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/Components/Footer.jsx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/Components/Header.jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/Components/Header.jsx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/Components/Timer.jsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/Components/Timer.jsx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/assets/buttonclick.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/assets/buttonclick.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/assets/logos/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/assets/logos/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/assets/sessionStarted.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/assets/sessionStarted.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/App.css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/App.js-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/App.jsx-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/App.jsx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/Components/Actions.jsx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/Components/Data.jsx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/Components/Footer.jsx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/Components/Header.jsx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/Components/Timer.jsx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/buttonclick.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/buttonclick.mp3__import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/icons/profile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/icons/profile.svg__import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/icons/spotify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/icons/spotify.svg__import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/icons/tasks.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/icons/tasks.svg__import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/icons/theme.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/icons/theme.svg__import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/logo.png__import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/logos/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/logos/logo.png__import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/logos/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/logos/logo.svg__import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/sessionStarted.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/sessionStarted.mp3__import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/sounds/sessionStarted.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/assets/sounds/sessionStarted.mp3__import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/background.jsx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/content.jsx-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/content.jsx-loader.js-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/content.jsx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/index.css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor/.vite-deps-chunk-4YP5LC2O.js__v--d472034d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor/.vite-deps-react.js__v--d472034d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor/.vite-deps-react_jsx-dev-runtime.js__v--d472034d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor/crx-client-port.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor/crx-client-preamble.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor/react-refresh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor/vite-client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor/vite-dist-client-env.mjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor/webcomponents-custom-elements.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-4YP5LC2O.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-4YP5LC2O.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@esbuild/darwin-arm64/bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@esbuild/darwin-arm64/bin/esbuild" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@esbuild/darwin-arm64/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@esbuild/darwin-arm64/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@rollup/rollup-darwin-arm64/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@rollup/rollup-darwin-arm64/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@rollup/rollup-darwin-arm64/rollup.darwin-arm64.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@rollup/rollup-darwin-arm64/rollup.darwin-arm64.node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/braces/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/braces/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/braces/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/braces/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/braces/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/braces/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/braces/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/braces/lib/compile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/braces/lib/compile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/braces/lib/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/braces/lib/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/braces/lib/expand.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/braces/lib/expand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/braces/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/braces/lib/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/braces/lib/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/braces/lib/stringify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/braces/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/braces/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/braces/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/braces/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/bin/esbuild" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/install.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/install.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/lib/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/lib/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/lib/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/lib/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fill-range/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fill-range/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fill-range/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fill-range/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/micromatch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/micromatch/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/micromatch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/micromatch/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/micromatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/micromatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picocolors/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picocolors/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picocolors/picocolors.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picocolors/picocolors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/at-rule.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/at-rule.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/comment.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/comment.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/container.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/container.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/css-syntax-error.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/css-syntax-error.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/declaration.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/declaration.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/document.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/document.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/input.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/input.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/list.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/list.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/map-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/map-generator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/node.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/node.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/postcss.d.mts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/postcss.d.mts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/postcss.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/postcss.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/previous-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/previous-map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/processor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/result.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/result.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/root.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/root.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/rule.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/rule.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/bin/rollup" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/bin/rollup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/es/getLogFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/es/getLogFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/es/parseAst.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/es/parseAst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/es/rollup.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/es/rollup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/es/shared/node-entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/es/shared/node-entry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/es/shared/parseAst.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/es/shared/parseAst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/es/shared/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/es/shared/watch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/getLogFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/getLogFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/loadConfigFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/loadConfigFile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/native.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/native.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/parseAst.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/parseAst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/rollup.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/rollup.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/rollup.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/rollup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/fsevents-importer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/fsevents-importer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/loadConfigFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/loadConfigFile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/parseAst.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/parseAst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/rollup.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/rollup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/watch-cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/watch-cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/watch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/source-map-js/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/source-map-js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map-js/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/source-map-js/lib/source-map-consumer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map-js/lib/source-map-consumer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/source-map-js/lib/source-map-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map-js/lib/source-map-generator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/source-map-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map-js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/client.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/client.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/client/client.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/client/client.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/client/client.mjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/client/env.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/client/env.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/client/env.mjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node-cjs/publicUtils.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node-cjs/publicUtils.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-8a-6Quh6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-R0I0XnyH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-TyoTMUQy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-kjUoH5nk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-mc9zj7Ue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/types/customEvent.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/types/customEvent.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/types/hmrPayload.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/types/hmrPayload.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/types/importGlob.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/types/importGlob.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Data.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Data.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Timer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Timer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/background.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,52 +179,25 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
-    <option name="recentBranches">
-      <RecentBranches>
-        <option name="branchesForRepo">
-          <list>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="merge" />
-                    <option name="lastUsedInstant" value="1709587000" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1709586999" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
-            </RecentBranchesForRepo>
-          </list>
-        </option>
-      </RecentBranches>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2bH3gNVEJo1u87RpwvfaxW3iVDE" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2lDBgWwwG6GVU47QLqN568ZJzWa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "merge",
-    "last_opened_file_path": "/Users/omda/Desktop/Programming/Projects/Extension/src/assets/icons",
+    "last_opened_file_path": "/Users/omda/Desktop/Extension",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,33 +206,19 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/icons" />
-      <recent name="$PROJECT_DIR$/src/assets/logos" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/icons" />
-      <recent name="$PROJECT_DIR$/src/assets/logos" />
-      <recent name="$PROJECT_DIR$/src/assets/sounds" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6639972f-29f0-47cf-8c52-e579392476eb" name="Changes" comment="" />
-      <created>1705858287819</created>
+      <changelist id="1b5bae9f-ecf0-454c-ad11-1fd72494886e" name="Changes" comment="" />
+      <created>1724704879381</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1705858287819</updated>
-      <workItem from="1705858289014" duration="28000" />
+      <updated>1724704879381</updated>
+      <workItem from="1724704880414" duration="315000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -5,24 +5,10 @@
   "action": {
     "default_popup": "index.html"
   },
-  "content_scripts": [
-    {
-      "js": [
-        "src/App.jsx-loader.js"
-      ],
-      "matches": [
-        "https://www.google.com/*"
-      ]
-    }
-  ],
   "permissions": [
     "storage",
     "activeTab"
   ],
-  "background": {
-    "service_worker": "src/background.jsx.js",
-    "type": "module"
-  },
   "web_accessible_resources": [
     {
       "resources": [
@@ -44,5 +30,9 @@
       ],
       "use_dynamic_url": true
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  }
 }

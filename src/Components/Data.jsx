@@ -1,4 +1,3 @@
-import spotify from "../assets/icons/spotify.svg";
 import profile from "../assets/icons/profile.svg";
 import tasks from "../assets/icons/tasks.svg";
 import theme from "../assets/icons/theme.svg";

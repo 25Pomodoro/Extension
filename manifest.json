@@ -5,24 +5,10 @@
   "action": {
     "default_popup": "index.html"
   },
-  "content_scripts": [
-    {
-      "js": [
-        "src/App.jsx"
-      ],
-      "matches": [
-        "https://www.google.com/*"
-      ]
-    }
-  ],
   "permissions": [
     "storage",
     "activeTab"
   ],
-  "background": {
-    "service_worker": "./src/background.jsx",
-    "type": "module"
-  },
   "web_accessible_resources": [
     {
       "matches": [
