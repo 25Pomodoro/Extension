@@ -3,3 +3,7 @@ node_modules
 /node_modules/*
 node_modules/caniuse-lite/*
 /node_modules/
+/dist/
+/.idea/
+.idea/
+.idea/*
