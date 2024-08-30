@@ -1,74 +1,82 @@
 import { useEffect, useState } from "react";
-import { useTimer } from 'react-timer-hook';
 
 function Timer() {
+    const [time, setTime] = useState("25:00");
+    const [isRunning, setIsRunning] = useState(false);
     const [sessionOn, setSessionOn] = useState(false);
-    const [expiryTimestamp, setExpiryTimestamp] = useState(null);
 
-    const {
-        totalSeconds,
-        seconds,
-        minutes,
-        hours,
-        days,
-        isRunning,
-        start,
-        pause,
-        resume,
-        restart,
-    } = useTimer({ expiryTimestamp, onExpire: () => console.warn('onExpire called') });
+    // sends a message to the background script to get the current timer status
+    useEffect(() => {
+        // Fetch the current timer status when the component mounts
+        chrome.runtime.sendMessage({ action: "getTimerStatus" }, (response) => {
+            if (response) {
+                setIsRunning(response.isRunning);
+                setSessionOn(response.isRunning || response.timeRemaining < 1500);
+                updateDisplay(response.timeRemaining);
+            }
+        });
+    }, []);
 
     useEffect(() => {
-        if (expiryTimestamp) {
-            start(); // Start the timer only if expiryTimestamp is set
+        let timer;
+        if (isRunning) {
+            timer = setInterval(() => {
+                chrome.runtime.sendMessage({ action: "getTimerStatus" }, (response) => {
+                    if (response) {
+                        const minutes = Math.floor(response.timeRemaining / 60);
+                        const seconds = response.timeRemaining % 60;
+                        setTime(`${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`);
+                    }
+                });
+            }, 1000);  // get new time every 1 second
         }
-    }, [expiryTimestamp, start]);
+        return () => clearInterval(timer);
+    }, [isRunning]);
+
+
+    const updateDisplay = (seconds) => {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        setTime(`${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`);
+    };
 
     const startTimer = () => {
-        const time = new Date();
-        time.setSeconds(time.getSeconds() + 1500); // 25 minutes timer
-        setExpiryTimestamp(time);
-    };
-
-    const pauseTimer = () => {
-        pause();
-    };
-
-    const resumeTimer = () => {
-        if (!sessionOn) {
-            startSession();
+        if (!isRunning) {
+            chrome.runtime.sendMessage({ action: "startTimer" }, () => {
+                setIsRunning(true);
+            });
         } else {
-            resume();
+            chrome.runtime.sendMessage({ action: "stopTimer" }, () => {
+                setIsRunning(false);
+            });
         }
-    };
-
-    const restartTimer = () => {
-        startTimer(); // Reset the timer
-        restart(expiryTimestamp);
-    };
-
-    const startSession = () => {
         setSessionOn(true);
-        startTimer(); // Ensure expiryTimestamp is set before starting
+    };
+
+    const resetTimer = () => {
+        chrome.runtime.sendMessage({ action: "resetTimer" }, () => {
+            setIsRunning(false);
+            setSessionOn(false);
+            setTime("25:00");
+        });
     };
 
     return (
         <div className="flex flex-col justify-center mt-8 gap-3">
             <div>
-                <h1 className="font-bold text-4xl select-none cursor-default">{minutes}:{seconds}</h1>
+                <h1 className="font-bold text-4xl select-none cursor-default">{time}</h1>
             </div>
             <div className="flex flex-col justify-center items-center gap-3">
                 <button
                     className="p-4 bg-gray-100 rounded-md w-5/12 drop-shadow-xl shadow-teal-400"
-                    onClick={isRunning ? pauseTimer : resumeTimer}
+                    onClick={startTimer}
                 >
                     {isRunning ? "Pause session" : "Start session"}
                 </button>
-
                 {sessionOn && (
                     <button
                         className="p-4 bg-gray-100 rounded-md w-5/12 drop-shadow-xl shadow-teal-400"
-                        onClick={restartTimer}
+                        onClick={resetTimer}
                     >
                         Reset session
                     </button>
