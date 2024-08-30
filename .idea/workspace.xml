@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b5bae9f-ecf0-454c-ad11-1fd72494886e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Spotify.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/sounds/buttonclick.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sounds/buttonclick.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/sounds/sessionStarted.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/sounds/sessionStarted.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Timer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Timer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +62,14 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "merge",
+    "git-widget-placeholder": "bg-timer",
     "last_opened_file_path": "/Users/omda/Desktop/Extension/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/omda/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

@@ -5,6 +5,7 @@ function Timer() {
     const [isRunning, setIsRunning] = useState(false);
     const [sessionOn, setSessionOn] = useState(false);
 
+    // sends a message to the background script to get the current timer status
     useEffect(() => {
         // Fetch the current timer status when the component mounts
         chrome.runtime.sendMessage({ action: "getTimerStatus" }, (response) => {
@@ -31,6 +32,7 @@ function Timer() {
         }
         return () => clearInterval(timer);
     }, [isRunning]);
+
 
     const updateDisplay = (seconds) => {
         const minutes = Math.floor(seconds / 60);
