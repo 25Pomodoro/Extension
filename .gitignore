@@ -7,3 +7,6 @@ node_modules/caniuse-lite/*
 /.idea/
 .idea/
 .idea/*
+.env
+src/.env
+/node_modules/
