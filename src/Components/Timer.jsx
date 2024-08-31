@@ -5,37 +5,60 @@ function Timer() {
     const [isRunning, setIsRunning] = useState(false);
     const [sessionOn, setSessionOn] = useState(false);
 
+    // sends a message to the background script to get the current timer status
+    useEffect(() => {
+        // Fetch the current timer status when the component mounts
+        chrome.runtime.sendMessage({ action: "getTimerStatus" }, (response) => {
+            if (response) {
+                setIsRunning(response.isRunning);
+                setSessionOn(response.isRunning || response.timeRemaining < 1500);
+                updateDisplay(response.timeRemaining);
+            }
+        });
+    }, []);
+
     useEffect(() => {
         let timer;
-
         if (isRunning) {
-            const [minutes, seconds] = time.split(':').map(Number);
-
             timer = setInterval(() => {
-                if (minutes === 0 && seconds === 0) {
-                    clearInterval(timer);
-                    setIsRunning(false);
-                } else {
-                    const newSeconds = seconds === 0 ? 59 : seconds - 1;
-                    const newMinutes = seconds === 0 ? minutes - 1 : minutes;
-                    const newTime = `${String(newMinutes).padStart(2, '0')}:${String(newSeconds).padStart(2, '0')}`;
-                    setTime(newTime);
-                }
-            }, 1000);
+                chrome.runtime.sendMessage({ action: "getTimerStatus" }, (response) => {
+                    if (response) {
+                        const minutes = Math.floor(response.timeRemaining / 60);
+                        const seconds = response.timeRemaining % 60;
+                        setTime(`${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`);
+                    }
+                });
+            }, 1000);  // get new time every 1 second
         }
-
         return () => clearInterval(timer);
-    }, [isRunning, time]);
+    }, [isRunning]);
+
+
+    const updateDisplay = (seconds) => {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        setTime(`${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`);
+    };
 
     const startTimer = () => {
+        if (!isRunning) {
+            chrome.runtime.sendMessage({ action: "startTimer" }, () => {
+                setIsRunning(true);
+            });
+        } else {
+            chrome.runtime.sendMessage({ action: "stopTimer" }, () => {
+                setIsRunning(false);
+            });
+        }
         setSessionOn(true);
-        setIsRunning((prevIsRunning) => !prevIsRunning);
     };
 
     const resetTimer = () => {
-        setIsRunning(false);
-        setTime("25:00");
-        setSessionOn(false);
+        chrome.runtime.sendMessage({ action: "resetTimer" }, () => {
+            setIsRunning(false);
+            setSessionOn(false);
+            setTime("25:00");
+        });
     };
 
     return (

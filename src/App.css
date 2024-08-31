@@ -16,23 +16,10 @@ body {
     background: linear-gradient(192deg, #ff687e, #fff, #ff687e);
     background-size: 600% 600%;
 
-    -webkit-animation: AnimationName 10s ease-in-out infinite;
-    -moz-animation: AnimationName 10s ease-in-out infinite;
-    animation: AnimationName 10s ease-in-out infinite;
 }
 
-@-webkit-keyframes AnimationName {
+@keyframes button-animation {
     0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:51% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:51% 0%}
+    50%{background-position:50% 75%}
+    100%{background-position:75% 100%}
 }
