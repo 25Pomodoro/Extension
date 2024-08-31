@@ -2,12 +2,16 @@ import profile from "../assets/icons/profile.svg";
 import tasks from "../assets/icons/tasks.svg";
 import theme from "../assets/icons/theme.svg";
 
-function Data() {
+function Data(name) {
     return (
         <div className={"flex flex-col justify-center items-center gap-3"}>
             <div className={"flex flex-col justify-center"}>
-                <p className={"text-2xl font-semibold"}>Welcome Emad</p>
-                <p className={"text-md font-semibold"}>Let's get productive 🚀</p>
+                {name ?
+                    <p className={"text-2xl font-semibold text-gray-50 dark:text-gray-900"}>Welcome {name}</p>
+                    :
+                    <p className={"text-2xl font-semibold text-gray-50 dark:text-gray-900"}>Welcome</p>
+                }
+                <p className={"text-md font-semibold text-gray-50 dark:text-gray-900"}>Let's get productive 🚀</p>
             </div>
 
             <div className={"flex flex-row w-8/12 justify-center items-center gap-5"}>
