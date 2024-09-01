@@ -1,5 +1,5 @@
-import darkAccount from "../assets/icons/dark-account.svg";
-import darkLogout from "../assets/icons/dark-logout.svg";
+import darkAccount from "../../public/assets/icons/dark-account.svg";
+import darkLogout from "../../public/assets/icons/dark-logout.svg";
 
 import { useContext } from "react";
 import UserDataContext from "../Context/UserDataContext.jsx";

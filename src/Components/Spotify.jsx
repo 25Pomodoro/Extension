@@ -1,4 +1,4 @@
-import spotify from '../assets/icons/spotify.svg';
+import spotify from '../../public/assets/icons/spotify.svg';
 
 
 function Spotify() {
