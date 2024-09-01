@@ -9,7 +9,7 @@ function Header() {
             <img className={"hover:cursor-pointer select-none"} src={HeaderLogo} alt="Pomodoro Timer" width={75}/>
         </div>
         <div>
-            <p className={"text-2xl font-semibold hover:cursor-pointer select-none text-gray-50 dark:text-gray-900"}>25Pomodoro</p>
+            <p className={"text-2xl font-semibold hover:cursor-pointer select-none text-gray-900"}>25Pomodoro</p>
         </div>
     </div>
   );
