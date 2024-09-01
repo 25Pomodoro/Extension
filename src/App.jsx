@@ -5,38 +5,35 @@ import Data from './Components/Data.jsx';
 import Footer from './Components/Footer.jsx';
 import UserAuth from "./Components/UserAuth.jsx";
 import UserDataContext from "./Context/UserDataContext.jsx";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 function App() {
-
-    // check if the user is logged in by checking data json in browser local storage
-    const [UserLoggedIn, setUserLoggedIn] = useState(false);
-    const [UserData, setUserData] = useState(null);
-
+    const [userLoggedIn, setUserLoggedIn] = useState(false);
+    const [userData, setUserData] = useState(null);
 
     useEffect(() => {
-        if (localStorage.getItem("25Pom-user-data")) {
+        const storedData = localStorage.getItem("25Pom-user-data");
+        if (storedData) {
             setUserLoggedIn(true);
-            setUserData(JSON.parse(localStorage.getItem("25Pom-user-data")));
+            setUserData(JSON.parse(storedData));
         } else {
             setUserLoggedIn(false);
         }
     }, []);
 
-
     return (
         <div className="App">
             <Header />
-            {UserLoggedIn ?
+            {userLoggedIn ? (
                 <div>
-                    <UserDataContext.Provider value={UserData}>
+                    <UserDataContext.Provider value={userData}>
                         <Data />
                     </UserDataContext.Provider>
                     <Timer />
                 </div>
-                :
-                <UserAuth loginControl={setUserLoggedIn}/>
-            }
+            ) : (
+                <UserAuth loginControl={setUserLoggedIn} />
+            )}
             <Footer />
         </div>
     );

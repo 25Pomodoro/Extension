@@ -1,29 +1,25 @@
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "./Firebase";
-import { useContext } from "react";
 import { useState } from "react";
-import App from "../App.jsx";
 
-function UserAuth(loginControl) {
-    // prompt user to enter first name, last name, and email
-    // add user to firebase
-
+function UserAuth({ loginControl }) {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
-    const [id, setId] = useState("");
 
     const addUser = async () => {
+        if (!isValid) {
+            console.error("Validation failed.");
+            return;
+        }
+
         try {
-            // add new user to firebase collection with document id of first-name-last-name-email
             const docRef = await addDoc(collection(db, "users"), {
                 first: firstName,
                 last: lastName,
                 email: email
             });
 
-
-            // save user data to local storage
             localStorage.setItem("25Pom-user-data", JSON.stringify({
                 id: docRef.id,
                 firstName: firstName,
@@ -39,7 +35,7 @@ function UserAuth(loginControl) {
             console.error("Error adding user: ", e);
             loginControl(false);
         }
-    }
+    };
 
     const isValid = firstName && lastName && email;
 
@@ -70,18 +66,15 @@ function UserAuth(loginControl) {
                 onChange={(e) => setEmail(e.target.value)}
             />
             <br/>
-            {isValid ?
-                <button onClick={addUser} className={"border-1 border-gray-300 bg-gray-50 rounded-md p-2 m-2"}>
-                    Sign up
-                </button>
-                :
-                <button disabled onClick={addUser} className={"border-1 border-gray-300 bg-gray-50 rounded-md p-2 m-2"}>
-                    Sign up
-                </button>
-            }
+            <button
+                onClick={addUser}
+                className={`border-1 border-gray-300 bg-gray-50 rounded-md p-2 m-2 ${isValid ? '' : 'opacity-50 cursor-not-allowed'}`}
+                disabled={!isValid}
+            >
+                Sign up
+            </button>
         </div>
-
-    )
+    );
 }
 
 export default UserAuth;

@@ -1,21 +1,19 @@
 import profile from "../assets/icons/profile.svg";
 import tasks from "../assets/icons/tasks.svg";
 import theme from "../assets/icons/theme.svg";
-import {useContext} from "react";
+import { useContext } from "react";
 import UserDataContext from "../Context/UserDataContext.jsx";
-function Data() {
-    const UserData = useContext(UserDataContext);
-    const FirstName = UserData.firstName;
 
+function Data() {
+    const userData = useContext(UserDataContext);
+    const firstName = userData?.firstName || '';
 
     return (
         <div className={"flex flex-col justify-center items-center gap-3"}>
             <div className={"flex flex-col justify-center"}>
-                {name ?
-                    <p className={"text-2xl font-semibold text-gray-50 dark:text-gray-900"}>Welcome {FirstName}</p>
-                    :
-                    <p className={"text-2xl font-semibold text-gray-50 dark:text-gray-900"}>Welcome</p>
-                }
+                <p className={"text-2xl font-semibold text-gray-50 dark:text-gray-900"}>
+                    {firstName ? `Welcome ${firstName}` : 'Welcome'}
+                </p>
                 <p className={"text-md font-semibold text-gray-50 dark:text-gray-900"}>Let's get productive 🚀</p>
             </div>
 
