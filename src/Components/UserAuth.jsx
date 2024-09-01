@@ -1,15 +1,17 @@
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "./Firebase";
-
+import { useContext } from "react";
 import { useState } from "react";
+import App from "../App.jsx";
 
-function UserAuth(setUserLogin) {
+function UserAuth(loginControl) {
     // prompt user to enter first name, last name, and email
     // add user to firebase
 
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
+    const [id, setId] = useState("");
 
     const addUser = async () => {
         try {
@@ -31,10 +33,11 @@ function UserAuth(setUserLogin) {
 
             console.log("User created: ", docRef);
             console.log("User data saved to local storage: ", JSON.parse(localStorage.getItem("25Pom-user-data")));
-            setUserLogin(true);
 
+            loginControl(true);
         } catch (e) {
             console.error("Error adding user: ", e);
+            loginControl(false);
         }
     }
 
