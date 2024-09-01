@@ -1,27 +1,55 @@
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "./Firebase";
+import { getDocs } from "firebase/firestore";
+import {useEffect, useState} from "react";
 
-import { useState } from "react";
-
-function UserAuth(setUserLogin) {
-    // prompt user to enter first name, last name, and email
-    // add user to firebase
-
+function UserAuth({ loginControl }) {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
 
+    class UserExistsError extends Error {
+        constructor(message) {
+            super(message);
+            this.name = "UserExistsError";
+        }
+    }
+
+    const checkUserExists = async () => {
+        const querySnapshot = await getDocs(collection(db, "users"));
+        querySnapshot.forEach((doc) => {
+            if (doc.data().email === email) {
+                alert("User already exists: ");
+                localStorage.setItem("25Pom-user-data", JSON.stringify({
+                    id: doc.id,
+                    firstName: doc.data().first,
+                    lastName: doc.data().last,
+                    email: doc.data().email
+                }));
+                loginControl(true);
+                window.location.reload();
+
+                throw new UserExistsError("User already exists");
+
+            }
+        });
+    }
+
     const addUser = async () => {
+        if (!isValid) {
+            console.error("Validation failed.");
+            return;
+        }
+
         try {
-            // add new user to firebase collection with document id of first-name-last-name-email
+            await checkUserExists()
+
             const docRef = await addDoc(collection(db, "users"), {
                 first: firstName,
                 last: lastName,
                 email: email
             });
 
-
-            // save user data to local storage
             localStorage.setItem("25Pom-user-data", JSON.stringify({
                 id: docRef.id,
                 firstName: firstName,
@@ -31,14 +59,30 @@ function UserAuth(setUserLogin) {
 
             console.log("User created: ", docRef);
             console.log("User data saved to local storage: ", JSON.parse(localStorage.getItem("25Pom-user-data")));
-            setUserLogin(true);
 
+
+            loginControl(true);
+            window.location.reload();
         } catch (e) {
-            console.error("Error adding user: ", e);
+            if (e instanceof UserExistsError) {
+                console.error("User already exists");
+            } else {
+                console.error("Error adding document: ", e);
+            }
         }
+    };
+
+    const validEmail = (email) => {
+        const re = /\S+@\S+\.\S+/;
+        return re.test(email);
     }
 
-    const isValid = firstName && lastName && email;
+    const validName = (name) => {
+        return name.length > 0;
+    }
+
+    const isValid = validName(firstName) && validName(lastName) && validEmail(email);
+    const isEmailValid = validEmail(email);
 
     return (
         <div>
@@ -62,23 +106,24 @@ function UserAuth(setUserLogin) {
             <input
                 type="email"
                 placeholder="Email"
+                pattern=".+@example\.com"
                 value={email}
                 className={"border-1 border-gray-300 rounded-md p-2 m-2"}
                 onChange={(e) => setEmail(e.target.value)}
             />
             <br/>
-            {isValid ?
-                <button onClick={addUser} className={"border-1 border-gray-300 bg-gray-50 rounded-md p-2 m-2"}>
-                    Sign up
-                </button>
-                :
-                <button disabled onClick={addUser} className={"border-1 border-gray-300 bg-gray-50 rounded-md p-2 m-2"}>
-                    Sign up
-                </button>
-            }
+            {isValid ? null : <p className={"text-red-500 font-bold"}>Please enter valid details</p>}
+            {isEmailValid ? null : <p className={"text-red-500 font-bold"}>Please enter a valid email</p>}
+            <button
+                onClick={checkUserExists}
+                id={"submit-button"}
+                className={`border-1 border-gray-300 bg-gray-50 rounded-md p-2 m-2 ${isValid ? '' : 'opacity-50 cursor-not-allowed'}`}
+                disabled={!isValid}
+            >
+                Sign up
+            </button>
         </div>
-
-    )
+    );
 }
 
 export default UserAuth;

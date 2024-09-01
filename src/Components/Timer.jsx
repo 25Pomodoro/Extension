@@ -64,21 +64,25 @@ function Timer() {
     return (
         <div className="flex flex-col justify-center mt-8 gap-3">
             <div>
-                <h1 className="font-bold text-4xl select-none cursor-default">{time}</h1>
+                <p className="font-bold text-4xl select-none cursor-default text-gray-50 dark:text-gray-900">{time}</p>
             </div>
             <div className="flex flex-col justify-center items-center gap-3">
                 <button
-                    className="p-4 bg-gray-100 rounded-md w-5/12 drop-shadow-xl shadow-teal-400"
+                    className="p-4 bg-gray-50 dark:bg-gray-900 rounded-md w-5/12 drop-shadow-xl shadow-teal-400 hover:scale-110 transition delay-75 ease-in-out"
                     onClick={startTimer}
                 >
-                    {isRunning ? "Pause session" : "Start session"}
+                    <p className={"text-gray-900 dark:text-gray-50"}>
+                        {isRunning ? "Pause session" : "Start session"}
+                    </p>
                 </button>
                 {sessionOn && (
                     <button
-                        className="p-4 bg-gray-100 rounded-md w-5/12 drop-shadow-xl shadow-teal-400"
+                        className="p-4 bg-gray-50 dark:bg-gray-900 rounded-md w-5/12 drop-shadow-xl shadow-teal-400 hover:scale-110 transition delay-75 ease-in-out"
                         onClick={resetTimer}
                     >
-                        Reset session
+                        <p className={"text-gray-900 dark:text-gray-50"}>
+                            Reset Session
+                        </p>
                     </button>
                 )}
             </div>
