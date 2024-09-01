@@ -1,9 +1,9 @@
 import './App.css';
 import Timer from './Components/Timer.jsx';
-import Header from './Components/Header.jsx';
-import Data from './Components/Data.jsx';
-import Footer from './Components/Footer.jsx';
-import UserAuth from "./Components/UserAuth.jsx";
+import Header from './Pages/Header.jsx';
+import Data from './Pages/Data.jsx';
+import Footer from './Pages/Footer.jsx';
+import UserAuth from "./Pages/UserAuth.jsx";
 import UserDataContext from "./Context/UserDataContext.jsx";
 import { useEffect, useState } from "react";
 

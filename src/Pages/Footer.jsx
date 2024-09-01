@@ -1,4 +1,4 @@
-import Spotify from "./Spotify.jsx";
+import Spotify from "../Components/Spotify.jsx";
 
 function Footer() {
 
