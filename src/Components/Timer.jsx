@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import fiveMinutesLeftNotification from "../Helpers/FiveMinutesLeftNotification.jsx";
+
 
 function Timer() {
     const [time, setTime] = useState("25:00");
@@ -30,9 +32,13 @@ function Timer() {
                 });
             }, 1000);  // get new time every 1 second
         }
+
+        if (time === "24:50" || time === "15:00" || time === "10:00" || time === "05:00") {
+            fiveMinutesLeftNotification();
+        }
+
         return () => clearInterval(timer);
     }, [isRunning]);
-
 
     const updateDisplay = (seconds) => {
         const minutes = Math.floor(seconds / 60);

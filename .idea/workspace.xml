@@ -5,35 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b5bae9f-ecf0-454c-ad11-1fd72494886e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/logos/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Helpers/FiveMinutesLeftNotification.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Helpers/FormatName.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react-dom_client.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-dev-runtime.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/react_jsx-runtime.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Spotify.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Spotify.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Data.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Data.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/dark-account.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icons/dark-account.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/dark-logout.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icons/dark-logout.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/light-account.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icons/light-account.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/light-logout.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icons/light-logout.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/profile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icons/profile.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/resetButton.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icons/resetButton.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/spotify.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icons/spotify.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/tasks.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icons/tasks.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/theme.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icons/theme.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/logos/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/logos/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/sounds/buttonclick.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/sounds/buttonclick.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/sounds/sessionStarted.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/sounds/sessionStarted.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Timer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Timer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/UserAuth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/UserAuth.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
