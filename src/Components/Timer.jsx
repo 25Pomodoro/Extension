@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import fiveMinutesLeftNotification from "../Helpers/FiveMinutesLeftNotification.jsx";
+
 
 function Timer() {
     const [time, setTime] = useState("25:00");
@@ -30,9 +32,13 @@ function Timer() {
                 });
             }, 1000);  // get new time every 1 second
         }
+
+        if (time === "24:50" || time === "15:00" || time === "10:00" || time === "05:00") {
+            fiveMinutesLeftNotification();
+        }
+
         return () => clearInterval(timer);
     }, [isRunning]);
-
 
     const updateDisplay = (seconds) => {
         const minutes = Math.floor(seconds / 60);
@@ -64,23 +70,23 @@ function Timer() {
     return (
         <div className="flex flex-col justify-center mt-8 gap-3">
             <div>
-                <p className="font-bold text-4xl select-none cursor-default text-gray-50 dark:text-gray-900">{time}</p>
+                <p className="font-bold text-4xl select-none cursor-default text-gray-900">{time}</p>
             </div>
             <div className="flex flex-col justify-center items-center gap-3">
                 <button
-                    className="p-4 bg-gray-50 dark:bg-gray-900 rounded-md w-5/12 drop-shadow-xl shadow-teal-400 hover:scale-110 transition delay-75 ease-in-out"
+                    className="p-4 bg-gray-900 rounded-md w-5/12 drop-shadow-xl shadow-teal-400 hover:scale-110 transition delay-75 ease-in-out"
                     onClick={startTimer}
                 >
-                    <p className={"text-gray-900 dark:text-gray-50"}>
+                    <p className={"text-gray-50"}>
                         {isRunning ? "Pause session" : "Start session"}
                     </p>
                 </button>
                 {sessionOn && (
                     <button
-                        className="p-4 bg-gray-50 dark:bg-gray-900 rounded-md w-5/12 drop-shadow-xl shadow-teal-400 hover:scale-110 transition delay-75 ease-in-out"
+                        className="p-4 bg-gray-900 rounded-md w-5/12 drop-shadow-xl shadow-teal-400 hover:scale-110 transition delay-75 ease-in-out"
                         onClick={resetTimer}
                     >
-                        <p className={"text-gray-900 dark:text-gray-50"}>
+                        <p className={"text-gray-50"}>
                             Reset Session
                         </p>
                     </button>

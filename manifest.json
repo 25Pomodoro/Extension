@@ -5,9 +5,16 @@
   "action": {
     "default_popup": "index.html"
   },
+  "description": "25Pomodoro - the ultimate productivity tool 🚀",
+    "icons": {
+        "32": "public/assets/logos/logo.png"
+    },
   "permissions": [
     "storage",
-    "activeTab"
+    "activeTab",
+    "tabs",
+    "alarms",
+    "notifications"
   ],
   "web_accessible_resources": [
     {

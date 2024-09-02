@@ -1,7 +1,10 @@
-import { collection, addDoc } from "firebase/firestore";
-import { db } from "./Firebase";
-import { getDocs } from "firebase/firestore";
 import {useEffect, useState} from "react";
+
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../Firebase.jsx";
+import { getDocs } from "firebase/firestore";
+
+import formatName from "../Helpers/FormatName.jsx";
 
 function UserAuth({ loginControl }) {
     const [firstName, setFirstName] = useState("");
@@ -45,15 +48,15 @@ function UserAuth({ loginControl }) {
             await checkUserExists()
 
             const docRef = await addDoc(collection(db, "users"), {
-                first: firstName,
-                last: lastName,
+                first: formatName(firstName),
+                last: formatName(lastName),
                 email: email
             });
 
             localStorage.setItem("25Pom-user-data", JSON.stringify({
                 id: docRef.id,
-                firstName: firstName,
-                lastName: lastName,
+                firstName: formatName(firstName),
+                lastName: formatName(lastName),
                 email: email
             }));
 
@@ -86,7 +89,8 @@ function UserAuth({ loginControl }) {
 
     return (
         <div>
-            <p className={"text-2xl font-semibold select-none mb-8"}>Let's get productive</p>
+            <p className={"text-2xl font-semibold select-none mb-2"}>Let's get productive</p>
+            <p className={"text-xs font-light select-none mb-8 ml-11 mr-11"}>If there is an account associated with your email, you will be signed in automatically</p>
             <input
                 type="text"
                 placeholder="First Name"
@@ -112,13 +116,14 @@ function UserAuth({ loginControl }) {
                 onChange={(e) => setEmail(e.target.value)}
             />
             <br/>
+
             {isValid ? null : <p className={"text-red-500 font-bold"}>Please enter valid details</p>}
             {isEmailValid ? null : <p className={"text-red-500 font-bold"}>Please enter a valid email</p>}
             <button
-                onClick={checkUserExists}
+                onClick={addUser}
                 id={"submit-button"}
                 className={`border-1 border-gray-300 bg-gray-50 rounded-md p-2 m-2 ${isValid ? '' : 'opacity-50 cursor-not-allowed'}`}
-                disabled={!isValid}
+                hidden={!isValid}
             >
                 Sign up
             </button>

@@ -1,5 +1,5 @@
-import darkAccount from "../assets/icons/dark-account.svg";
-import darkLogout from "../assets/icons/dark-logout.svg";
+import darkAccount from "../../public/assets/icons/dark-account.svg";
+import darkLogout from "../../public/assets/icons/dark-logout.svg";
 
 import { useContext } from "react";
 import UserDataContext from "../Context/UserDataContext.jsx";
@@ -19,10 +19,10 @@ function Data() {
     return (
         <div className={"flex flex-col justify-center items-center gap-3 mt-auto"}>
             <div className={"flex flex-col justify-center"}>
-                <p className={"text-2xl font-semibold text-gray-50 dark:text-gray-900"}>
+                <p className={"text-2xl font-semibold text-gray-900"}>
                     {firstName ? `Welcome ${firstName}` : 'Welcome'}
                 </p>
-                <p className={"text-md font-semibold text-gray-50 dark:text-gray-900"}>Let's get productive 🚀</p>
+                <p className={"text-md font-semibold text-gray-900"}>Let's get productive 🚀</p>
             </div>
 
             <div className={"flex flex-row w-8/12 justify-center items-center gap-3.5"}>
