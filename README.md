@@ -8,5 +8,5 @@ With 25Pomodoro you can:
 - Access your personal dashboard for productivity insights 🤫
 - Get analytics on your past productivity sessions 📈
 
-<img src="https://github.com/25Pomodoro/.github/blob/main/extension.png" />
+<img src="https://github.com/25Pomodoro/.github/blob/main/extension.png" width=500/>
 > Coming soon 
