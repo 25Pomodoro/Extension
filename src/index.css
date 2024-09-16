@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 html {
-    background: none;
-    width: 325px;
-    height: 550px;
-    text-align: center;
+  background: none;
+  width: 325px;
+  height: 550px;
+  text-align: center;
 
-    overflow-x: hidden;
-    overflow-y: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }

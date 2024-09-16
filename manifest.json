@@ -6,30 +6,19 @@
     "default_popup": "index.html"
   },
   "description": "25Pomodoro - the ultimate productivity tool 🚀",
-    "icons": {
-        "32": "public/assets/logos/logo.png"
-    },
-  "permissions": [
-    "storage",
-    "activeTab",
-    "tabs",
-    "alarms",
-    "notifications"
-  ],
+  "icons": {
+    "32": "public/assets/logos/logo.png"
+  },
+  "permissions": ["storage", "activeTab", "tabs", "alarms", "notifications"],
   "web_accessible_resources": [
     {
-      "matches": [
-        "<all_urls>"
-      ],
-      "resources": [
-        "**/*",
-        "*"
-      ],
+      "matches": ["<all_urls>"],
+      "resources": ["**/*", "*"],
       "use_dynamic_url": true
     }
   ],
-    "background": {
-      "service_worker": "background.js",
-      "type": "module"
-    }
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
 }
